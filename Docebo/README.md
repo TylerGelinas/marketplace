@@ -1,6 +1,6 @@
 # Docebo SaaS REST Connector for Ping Advanced Identity Cloud
 
-This guide walks you through installing and configuring the **Docebo SaaS REST Connector** for **PingOne Advanced Identity Cloud**. The connector definition in `docebo_connector.json` uses the REST connector bundle `org.forgerock.openicf.connectors.rest.RestConnector` and defines CRUD plus query operations for the `__ACCOUNT__` object type.
+This repository contains a sample SaaS REST connector definition for integrating **Docebo** with **PingOne Advanced Identity Cloud** using the **SaaS REST connector**. The connector definition in `docebo_connector.json` uses the REST connector bundle `org.forgerock.openicf.connectors.rest.RestConnector` and defines CRUD plus query operations for the `__ACCOUNT__` object type.
 
 ## Overview
 
@@ -67,14 +67,12 @@ To use this connector, you need to update the `docebo_connector.json` file with 
 ### 5. Set authentication details
 
 The connector is configured to use a **Refresh token **. Update the following fields with values from your Docebo API application:
-
-- `authenticationMethod`: Leave as `TOKEN`
-- `grantType`: Set to `refresh_token`
+- `authToken`: Your Docebo auth token
 - `refreshToken`: Your Docebo refresh token
+- `serviceUri`: The Docebo OAuth token endpoint URL
 - `tokenEndpoint`: The Docebo OAuth token endpoint URL
 - `clientId`: Your Docebo API client ID
 - `clientSecret`: Your Docebo API client secret
-- `useBasicAuthForOauthTokenNeg`: Usually `true`
 
 ### 6. Verify API base URL
 
