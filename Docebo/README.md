@@ -59,7 +59,7 @@ Download the docebo_connector.json file
 
 ### 5. Set docebo connectors values
 
-To use this connector, you need to update the `docebo_connector.json` file with your Docebo API details and authentication settings.
+To use this connector, you need to update the [https://github.com/ForgeRock/tntp-docebo/blob/main/docebo_connector.json](`docebo_connector.json`) file with your Docebo API details and authentication settings.
 
 The connector is configured to use a **Refresh token **. Update the following fields with values from your Docebo API application:
 - `authToken`: Your Docebo auth token
